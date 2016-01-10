@@ -1,6 +1,5 @@
 /*!
  * NO SORICE
- * http://jquery.com/
  *
  * Copyright 2015, Anasprogrammer
  * Dual licensed under the MIT or GPL Version 2 licenses.
