@@ -4,7 +4,7 @@ hide your source code and save your text and image in any website page   ( html,
 
 #how to use 
 write  
- <script src="nosoruce.js"></script>
+ <code> <script src="nosoruce.js"></script> </code>
  in any page you want to make nosource show
 
 
