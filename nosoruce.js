@@ -3,7 +3,7 @@
  *
  * Copyright 2015, Anasprogrammer
  * Dual licensed under the MIT or GPL Version 2 licenses.
- * 
+ * v 1.3
 
  */
 (function(A,w){function ma(){if(!c.isReady){try{s.documentElement.doScroll("left")}catch(a){setTimeout(ma,1);return}c.ready()}}function Qa(a,b){b.src?c.ajax({url:b.src,async:false,dataType:"script"}):c.globalEval(b.text||b.textContent||b.innerHTML||"");b.parentNode&&b.parentNode.removeChild(b)}function X(a,b,d,f,e,j){var i=a.length;if(typeof b==="object"){for(var o in b)X(a,o,b[o],f,e,d);return a}if(d!==w){f=!j&&f&&c.isFunction(d);for(o=0;o<i;o++)e(a[o],b,f?d.call(a[o],o,e(a[o],b)):d,j);return a}return i?
@@ -159,16 +159,19 @@ $(document)[0].oncontextmenu = function() { return false;}
             }
 
         });
-});
+
 document.onkeydown = function(e) {
-        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 ||  e.keyCode === 83 ||  e.keyCode === 16||  e.keyCode === 117)) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86  || e.keyCode === 73 || e.keyCode === 85 ||  e.keyCode === 83 ||  e.keyCode === 16||  e.keyCode === 117 )) {
                 $("body" ).empty();
 				 $("body" ).append('<center><H1>NO source code</h1></center>')
             return false;
-        } else {
-            return true;
+        } else if ( e.keyCode === 123 ) {
+                $("body" ).empty();
+				 $("body" ).append('<center><H1>NO source code</h1></center>')
+            return false;
         }
 };
-  
+
+  });
 
 
